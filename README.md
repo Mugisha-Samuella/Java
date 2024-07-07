@@ -6,4 +6,3 @@
    git reset 7f6d03 --hard
    git push origin -f
    ```
-```
