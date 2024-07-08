@@ -3,6 +3,6 @@ public class InstanceOf {
         String str = "Is str an instance of String? ";
         boolean result = str instanceof String;
 
-        System.out.println(str + result);
+        System.out.println(str + result); //true
     }
 }
