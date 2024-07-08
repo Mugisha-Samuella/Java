@@ -6,5 +6,11 @@ public class StringInstanceProperty {
 
         //Checks if String is empty
         System.out.println(school.isEmpty()); //output is false
+
+        //String to uppercase
+        System.out.println(school.toUpperCase());
+
+        //string to lowercase
+        System.out.println(school.toLowerCase());
     }
 }
