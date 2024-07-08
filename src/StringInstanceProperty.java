@@ -12,5 +12,11 @@ public class StringInstanceProperty {
 
         //string to lowercase
         System.out.println(school.toLowerCase());
+
+        //Comparing two Object Strings
+        String string1 = new String("rca");
+        String string2 = new String("rca");
+
+        System.out.println(string1 == string2); //false
     }
 }
