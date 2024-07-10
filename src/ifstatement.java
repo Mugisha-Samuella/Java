@@ -13,5 +13,13 @@ public class ifstatement {
         if(language == "Java"){
             System.out.println(language + " is the best programming language");
         }
+
+        //if...else
+        if(language == "Python"){
+            System.out.println("Python is the best programming language");
+        }
+        else{
+            System.out.println(language + " is the best programming language");
+        }
     }
 }
