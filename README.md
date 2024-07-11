@@ -1,4 +1,4 @@
-<h1>Extra things I've learned from my mistakes!</h1>
+<h1>Extra things I've learned</h1>
 
 1. How to remove a commit that is already pushed to Github:
    For example, if commit 7f6d03 was made before the wrongful commits:
