@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 class UserInputSum {
     public static void main(String[] args) {
-2
 
         Double number, sum = 0.0;
 
