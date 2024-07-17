@@ -32,5 +32,7 @@ public class Switch {
 
         }
         System.out.println("Size: " + size);
+
+
     }
 }
