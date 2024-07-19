@@ -1,64 +1,88 @@
+import java.util.ArrayList;
+
 public class User {
     private String _name;
-    String membership;
+    private String _membership;
     private String _color;
     private String _location;
+    private String _favouritefood;
 
-    void set_name(String name){
+    public User(String name) {
+        set_name(name);
+    }
+
+    public String toString(){
+        return get_name() + " " + get_membership();
+    }
+
+    public  boolean equals(User u2){
+        return get_name().equals(u2.get_name()) && get_membership().equals(u2.get_membership());
+    }
+
+    public User(){
+
+    }
+
+    public User(String name, String membership) {
+        set_name(name);
+        set_membership(membership);
+    }
+
+    void set_name(String name) {
         _name = name;
     }
 
 
-    String get_name(){
+    String get_name() {
         return _name;
+    }
+
+    //membership
+    void set_membership(String membership) {
+        _membership = membership;
+    }
+
+    String get_membership() {
+        return _membership;
     }
 
     /**
      * Using Enums
      */
-    void set_color(Favcolor color){
+    void set_color(Favcolor color) {
         _color = color.name();
     }
 
-    public enum Favcolor{
+    public enum Favcolor {
         Blue, Red, Yellow, Green
     }
 
-    String get_color(){
+    String get_color() {
         return _color;
     }
 
-    void set_location(Location location){
+    void set_location(Location location) {
         _location = location.name();
     }
 
-    public enum Location{
-        Kigali, Nyarugenge,Gasabo
+    public enum Location {
+        Kigali, Nyarugenge, Gasabo
     }
 
-    String get_location(){
+    String get_location() {
         return _location;
     }
 
-    //Using Constructors
-    //school
-    private String _schoolname;
-    private String _schooladdress;
-
-    void set_schoolname(String schoolname){
-        _schoolname = schoolname;
+    void set_favouritefood(Favouritefood favouritefood){
+        _favouritefood = favouritefood.name();
     }
 
-    String get_schoolname(){
-        return _schoolname;
+    public enum Favouritefood{
+        Ibiraha, Rice, Isombe //again not true
     }
 
-
-    void set_schooladdress(String schoolname){
-        _schoolname = schoolname;
+    String get_favouritefood() {
+        return _favouritefood;
     }
 
-    String get_schooladdress(){
-        return _schoolname;
-    }
 }
