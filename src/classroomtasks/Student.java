@@ -1,13 +1,7 @@
 package classroomtasks;
 
-public class Student {
-    String firstName;
-    String lastName;
-    char gender;
+public class Student extends Person{
 
-    public void student1(String firstName, String lastName, char gender){
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.gender = gender;
-    }
+    public int classYear;
+    static int studentOfNumber = 0;
 }
